@@ -17,20 +17,22 @@ header{
 }
 
 .box{
+
+    
     background-image: url(pngs/navio.png);
     background-attachment: absolute;
     background-repeat: no-repeat;
 
-    height: 100vh;
+    height: 85vh;
     max-width: 100vw;
 
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-.table{
-    height: 500px;
-    width: 1000px;
-    background-color: rgba(0, 0, 0, 0.699);
-    z-index: 1;
+.table-container{
+    border: 1px solid black;
 }
+
+
