@@ -1,6 +1,11 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    
+}
+
+body{
+    background-color: black;
 }
 
 header{
@@ -16,23 +21,68 @@ header{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+footer{
+
+
+
+}
+
 .box{
 
-    
     background-image: url(pngs/navio.png);
     background-attachment: absolute;
     background-repeat: no-repeat;
 
-    height: 85vh;
+    height: 80vh;
     max-width: 100vw;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
+
+
+
+.botoes{
+
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    height: 700px;
+    width: 250px;
+
+}
+
+
 
 .table-container{
     border: 1px solid black;
 }
 
+table {
+    width: 700px;
+    height: 700px;
+    border-collapse: collapse;
+}
+
+.cell {
+    
+    background-image: url(pngs/agua.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    border: 1px solid black;
+    text-align: center;
+}
+.acertou {
+    
+    background-image: url(pngs/sinking.png);
+
+}
+.errou{
+    
+    background-image: url(pngs/target.png);
+
+}
 
