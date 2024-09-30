@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Batalha Naval</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -14,26 +17,89 @@
 
     </header>
 <div class="box">
+    
 
-    <div class="table-container">
-     </div>
+            <div class="table-container">
+            </div>
 
-     <div class="botoes">
+     <div class="botoes-imagem">
+        <div class="botoes">
         
-            <button id="create-table">Iniciar</button>
-            <input type="radio" id="facil" value="0" name="select" checked/>
-            <label for="facil">Facil</label>
-            <input type="radio" id="medio" value="1" name="select" />
-            <label for="medio">Medio</label>
-            <input type="radio" id="dificil" value="2" name="select" />
-            <label for="dificil">Dificil</label>
+            
+            
 
-            <label id="tiros">Tiros:</label>
-        
+              <button id="create-table" type="button" class="btn-class-name">
+                <span class="back"></span>
+                <span class="front"></span>
+              </button>
+              
+            
+            
+                
+                
+                <div class="radio-input">
+                    
+                    <div class="radio-input-path">
+                      
+                      <div class="radioContainer radioContainer2">
+                        <label class="label2" for="facil">Facil</label>
+                        <input
+                          class="radio2"
+                          value="0"
+                          name="select"
+                          id="facil"
+                          type="radio"
+                        />
+                      </div>
+                      <div class="radioContainer radioContainer3">
+                        <label class="label3" for="medio">Medio</label>
+                        <input
+                          class="radio3"
+                          value="1"
+                          name="select"
+                          id="medio"
+                          type="radio"
+                        />
+                      </div>
+                      <div class="radioContainer radioContainer4">
+                        <label class="label4" for="dificil">Dificil</label>
+                        <input
+                          class="radio4"
+                          value="2"
+                          name="select"
+                          id="dificil"
+                          type="radio"
+                        />
+                      </div>
+                      
+                    </div>
+                    <div class="knob">
+                      <div class="center"></div>
+                    </div>
+                
+                  </div>
+
+                  <div class="card-post">
+
+                  <div class="card"><h3 class="jac">Tiros</h3>
+                    <div class="card-overlay"> </div>
+                    <div id="tiros" class="card-inner jac"></div>
+                  </div>
+
+                  <div class="card"><h3 class="jac">Inimigos</h3>
+                    <div class="card-overlay"> </div>
+                    <div id="barcos" class="card-inner jac"></div>
+                  </div>
+                </div>
+            
+        </div>
+
+
+
 
     </div>
-
 </div>
+
 <footer></footer>
 
     <script src="script.js"></script>

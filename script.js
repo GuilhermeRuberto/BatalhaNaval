@@ -98,6 +98,7 @@ function createTable(rows, cols) {
 //Função alteraLabel
 function alteraLabel() {
     document.getElementById("tiros").innerHTML =qntTiros;
+    document.getElementById("barcos").innerHTML =qntBarco;
   }
 
 //Função limpa container table
