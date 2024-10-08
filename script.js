@@ -76,11 +76,11 @@ function createTable(rows, cols) {
                }
 
                if(qntTiros==0){
-                alert("Voce Perdeu")
+                alert("Que Pena, Você Perdeu!")
                 window.location.reload(true);
                }
                if(qntBarco==0){
-                alert("Voce Ganhou")
+                alert("Parabéns,Você Ganhou!")
                 window.location.reload(true);
                }
             });
@@ -120,19 +120,19 @@ if(select == 0){
     linhas = 5;
     colunas = 5;
     qntTiros = 20;
-    alerta = "Facil"
+    alerta = " Selecionou o Modo Fácil"
 }
 else if(select == 1){
     linhas = 8;
     colunas = 8;
     qntTiros = 40;
-    alerta = "Médio"
+    alerta = "Selecionou o Modo Médio"
 }
 else{
     linhas = 10;
     colunas = 10;
     qntTiros = 50;
-    alerta = "Dificil"
+    alerta = "Selecionou o Modo Dificil"
 }
 
 
@@ -154,3 +154,8 @@ else{
     
 });
 
+function darkenBackground() {
+    document.body.style.transition = "background-color 0.5s";
+    document.body.style.backgroundColor = "rgba(0, 0, 0, 0.7)";
+  }
+  //funcao para escurecer background
